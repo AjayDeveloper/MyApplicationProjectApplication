@@ -1,0 +1,26 @@
+package com.example.dto;
+
+public class Options {
+
+	
+	private String label_Date;
+	
+	private String saturday_Delivery;
+	
+	private String dry_Ice_Wt;
+	
+	private String label_Img;
+
+	public Options() {
+	
+	}
+
+	
+	
+
+	
+
+	
+	
+	
+}

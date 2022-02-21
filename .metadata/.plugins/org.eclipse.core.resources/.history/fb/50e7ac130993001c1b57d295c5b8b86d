@@ -26,6 +26,4 @@ public class CustomsField {
 		return "CustomsField [customsFld=" + customsFld + "]";
 	}
 
-	
-	
 }

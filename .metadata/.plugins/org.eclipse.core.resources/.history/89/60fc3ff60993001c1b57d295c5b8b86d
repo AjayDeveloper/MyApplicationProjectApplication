@@ -1,0 +1,161 @@
+package com.example.dto;
+
+public class OptionalInfo {
+
+	
+	private CustomsFldlst customs_Fldlst;
+	
+	private String LoadNbr;
+	
+	private Integer KeyCity;
+	
+	private String AgLabel;
+
+	private String DryIceLabel;
+	
+	private String WineLabel;
+	
+	private String WineLicNbr;
+
+	private String MilitaryLabel;
+	
+	private String SatDeliveryLabel;
+	
+	private String InternationalLabel;
+	
+	private String GreetingcardLabel;
+
+	private Long AutoManifest;
+
+	public OptionalInfo() {
+		
+	}
+
+	public OptionalInfo(CustomsFldlst customs_Fldlst, String loadNbr, Integer keyCity, String agLabel,
+			String dryIceLabel, String wineLabel, String wineLicNbr, String militaryLabel, String satDeliveryLabel,
+			String internationalLabel, String greetingcardLabel, Long autoManifest) {
+		super();
+		this.customs_Fldlst = customs_Fldlst;
+		LoadNbr = loadNbr;
+		KeyCity = keyCity;
+		AgLabel = agLabel;
+		DryIceLabel = dryIceLabel;
+		WineLabel = wineLabel;
+		WineLicNbr = wineLicNbr;
+		MilitaryLabel = militaryLabel;
+		SatDeliveryLabel = satDeliveryLabel;
+		InternationalLabel = internationalLabel;
+		GreetingcardLabel = greetingcardLabel;
+		AutoManifest = autoManifest;
+	}
+
+	public CustomsFldlst getCustoms_Fldlst() {
+		return customs_Fldlst;
+	}
+
+	public void setCustoms_Fldlst(CustomsFldlst customs_Fldlst) {
+		this.customs_Fldlst = customs_Fldlst;
+	}
+
+	public String getLoadNbr() {
+		return LoadNbr;
+	}
+
+	public void setLoadNbr(String loadNbr) {
+		LoadNbr = loadNbr;
+	}
+
+	public Integer getKeyCity() {
+		return KeyCity;
+	}
+
+	public void setKeyCity(Integer keyCity) {
+		KeyCity = keyCity;
+	}
+
+	public String getAgLabel() {
+		return AgLabel;
+	}
+
+	public void setAgLabel(String agLabel) {
+		AgLabel = agLabel;
+	}
+
+	public String getDryIceLabel() {
+		return DryIceLabel;
+	}
+
+	public void setDryIceLabel(String dryIceLabel) {
+		DryIceLabel = dryIceLabel;
+	}
+
+	public String getWineLabel() {
+		return WineLabel;
+	}
+
+	public void setWineLabel(String wineLabel) {
+		WineLabel = wineLabel;
+	}
+
+	public String getWineLicNbr() {
+		return WineLicNbr;
+	}
+
+	public void setWineLicNbr(String wineLicNbr) {
+		WineLicNbr = wineLicNbr;
+	}
+
+	public String getMilitaryLabel() {
+		return MilitaryLabel;
+	}
+
+	public void setMilitaryLabel(String militaryLabel) {
+		MilitaryLabel = militaryLabel;
+	}
+
+	public String getSatDeliveryLabel() {
+		return SatDeliveryLabel;
+	}
+
+	public void setSatDeliveryLabel(String satDeliveryLabel) {
+		SatDeliveryLabel = satDeliveryLabel;
+	}
+
+	public String getInternationalLabel() {
+		return InternationalLabel;
+	}
+
+	public void setInternationalLabel(String internationalLabel) {
+		InternationalLabel = internationalLabel;
+	}
+
+	public String getGreetingcardLabel() {
+		return GreetingcardLabel;
+	}
+
+	public void setGreetingcardLabel(String greetingcardLabel) {
+		GreetingcardLabel = greetingcardLabel;
+	}
+
+	public Long getAutoManifest() {
+		return AutoManifest;
+	}
+
+	public void setAutoManifest(Long autoManifest) {
+		AutoManifest = autoManifest;
+	}
+
+	@Override
+	public String toString() {
+		return "OptionalInfo [customs_Fldlst=" + customs_Fldlst + ", LoadNbr=" + LoadNbr + ", KeyCity=" + KeyCity
+				+ ", AgLabel=" + AgLabel + ", DryIceLabel=" + DryIceLabel + ", WineLabel=" + WineLabel + ", WineLicNbr="
+				+ WineLicNbr + ", MilitaryLabel=" + MilitaryLabel + ", SatDeliveryLabel=" + SatDeliveryLabel
+				+ ", InternationalLabel=" + InternationalLabel + ", GreetingcardLabel=" + GreetingcardLabel
+				+ ", AutoManifest=" + AutoManifest + "]";
+	}
+
+	
+	
+
+	
+}

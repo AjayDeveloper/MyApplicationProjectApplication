@@ -1,0 +1,38 @@
+package com.example.dto;
+
+public class OptionalInfo {
+
+	
+	private CustomsFldlst customs_Fldlst;
+	
+	private String LoadNbr;
+	
+	private Integer KeyCity;
+	
+	private String AgLabel;
+
+	private String DryIceLabel;
+	
+	private String WineLabel;
+	
+	private String WineLicNbr;
+
+	private String MilitaryLabel;
+	
+	private String SatDeliveryLabel;
+	
+	private String InternationalLabel;
+	
+	private String GreetingcardLabel;
+
+	private Long AutoManifest;
+
+	public OptionalInfo() {
+		
+	}
+
+	
+	
+
+	
+}
