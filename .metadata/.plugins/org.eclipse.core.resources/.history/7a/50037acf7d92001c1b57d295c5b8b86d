@@ -1,0 +1,17 @@
+package com.example.dto;
+
+public class RequestData {
+
+	private int id;
+	private String name;
+
+	public RequestData() {
+	}
+
+	public RequestData(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+}

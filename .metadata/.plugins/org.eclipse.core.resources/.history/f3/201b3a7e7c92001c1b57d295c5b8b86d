@@ -1,0 +1,7 @@
+package com.example.controller;
+
+@RestController
+@RequestMapping("/olx/user")
+public class Controller {
+
+}

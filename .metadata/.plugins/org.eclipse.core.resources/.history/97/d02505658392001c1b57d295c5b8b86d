@@ -1,0 +1,33 @@
+package com.example.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.example.dto.RequestData;
+import com.example.entity.RequestDataDocument;
+import com.example.repository.RequestDataRepo;
+
+public class RequestDataImpl implements RequestDataService{
+	
+	@Autowired
+	RequestDataRepo repo;
+
+	@Override
+	public ResponseEntity<RequestData> insertRequestData(RequestData requestData) {
+		RequestDataDocument requestDataDocument = new RequestDataDocument();
+		requestDataDocument.setId(requestData.getId());
+		requestDataDocument.setName(requestData.getName());
+		requestDataDocument= repo.save(requestDataDocument); 
+		RequestData requestData2= convertTODTO(requestDataDocument);
+		return new ResponseEntity<RequestData>(,HttpStatus.OK);
+	}
+
+	private RequestData convertTODTO(RequestDataDocument requestDataDocument) {
+		RequestData requestDataDto = new RequestData();
+		requestDataDto.setId(requestDataDocument.getId());
+		requestDataDto.setName(requestDataDocument.getName());
+		return requestDataDto;
+	}
+
+}

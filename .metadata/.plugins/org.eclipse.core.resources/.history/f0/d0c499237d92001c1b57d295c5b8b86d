@@ -1,0 +1,9 @@
+package com.example.dto;
+
+public class RequestData {
+	
+	private int id;
+	private String name;
+	
+
+}
