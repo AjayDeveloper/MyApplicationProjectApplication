@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.dto.EasyPostOne;
-import com.example.dto.EasyPostOneData;
-import com.example.dto.GiftMessage;
 import com.example.dto.RequestData;
 import com.example.service.RequestDataService;
 
@@ -20,23 +17,29 @@ public class Controller {
 	@Autowired
 	RequestDataService service;
 
+	// createData is method to insertData into MongoDB
 	@PostMapping(value = "/create", consumes = { MediaType.APPLICATION_JSON_VALUE,
 			MediaType.APPLICATION_XML_VALUE }, produces = { MediaType.APPLICATION_JSON_VALUE,
 					MediaType.APPLICATION_XML_VALUE })
 	public RequestData createData(@RequestBody RequestData requestData) {
+		
 		System.out.println("CreateData Method call");
 		return service.insertRequestData(requestData);
+		
 
 	}
 
-	@PostMapping(value = "/createlog", consumes = { MediaType.APPLICATION_JSON_VALUE,
-			MediaType.APPLICATION_XML_VALUE }, produces = { MediaType.APPLICATION_JSON_VALUE,
+	// createData is method to log the data of requestData into console
+
+	@PostMapping(value = "/createlog", consumes = { MediaType.APPLICATION_JSON_VALUE,MediaType.TEXT_XML_VALUE,
+			MediaType.APPLICATION_XML_VALUE }, produces = { MediaType.APPLICATION_JSON_VALUE,MediaType.TEXT_XML_VALUE,
 					MediaType.APPLICATION_XML_VALUE })
-	public RequestData createDatalog(@RequestBody RequestData easyPostOneData) {
-		System.out.println("CreateDatalog Method call" + easyPostOneData);
+	public RequestData createDatalog(@RequestBody RequestData requestData) {
+		System.out.println("CreateDatalog Method call" + requestData);
 
-		return easyPostOneData;
+		return requestData;
 
 	}
 
+	
 }

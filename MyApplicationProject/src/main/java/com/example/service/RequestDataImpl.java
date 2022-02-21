@@ -13,11 +13,11 @@ public class RequestDataImpl implements RequestDataService {
 	@Autowired
 	RequestDataRepo repo;
 
+	
 	@Override public RequestData insertRequestData(RequestData requestData) {
-	  System.out.println("insertRequestData Method call"); RequestDataDocument
-	  requestDataDocument = new RequestDataDocument();
+	  System.out.println("insertRequestData Method call");
+	  RequestDataDocument requestDataDocument = new RequestDataDocument();
 	  requestDataDocument.setEasyPostOneData(requestData.getEasyPostOneData());
-	  
 	  requestDataDocument= repo.save(requestDataDocument);
 	  
 	  return convertTODTO(requestDataDocument); }
@@ -26,7 +26,6 @@ public class RequestDataImpl implements RequestDataService {
 		System.out.println("convertTODTO Method call");
 		RequestData requestDataDto = new RequestData();
 		requestDataDto.setEasyPostOneData(requestDataDocument.getEasyPostOneData());
-		
 		return requestDataDto;
 	}
 

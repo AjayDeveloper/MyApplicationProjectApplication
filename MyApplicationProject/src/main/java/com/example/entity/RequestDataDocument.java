@@ -1,18 +1,17 @@
 package com.example.entity;
 
-import org.springframework.data.mongodb.core.index.IndexDirection;
-import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.example.dto.EasyPostOneData;
 
-@Document(value = "requestdata")
+@Document(value = "orderdata")
 public class RequestDataDocument {
+	
+private EasyPostOneData easyPostOneData;
 
-	private EasyPostOneData easyPostOneData;
-
+	
 	public RequestDataDocument() {
-
+		
 	}
 
 	public RequestDataDocument(EasyPostOneData easyPostOneData) {
