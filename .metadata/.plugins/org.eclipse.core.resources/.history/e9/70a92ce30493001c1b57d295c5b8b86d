@@ -1,0 +1,21 @@
+package com.example.dto;
+
+public class ServiceInfo {
+	
+	
+	private String carrier;
+	
+	private String levelOfService;
+
+	public ServiceInfo() {
+		
+	}
+
+	
+	
+
+	
+	
+
+	
+}

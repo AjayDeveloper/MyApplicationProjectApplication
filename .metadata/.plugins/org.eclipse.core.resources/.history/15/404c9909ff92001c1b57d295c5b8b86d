@@ -1,0 +1,72 @@
+package com.example.dto;
+
+public class Options {
+
+	
+	private String labelDate;
+	
+	private String saturdayDelivery;
+	
+	private String dryIceWt;
+	
+	private String labelImg;
+	
+	
+	
+
+	
+
+	
+	
+	public Options(String labelDate, String saturdayDelivery, String dryIceWt, String labelImg) {
+		super();
+		this.labelDate = labelDate;
+		this.saturdayDelivery = saturdayDelivery;
+		this.dryIceWt = dryIceWt;
+		this.labelImg = labelImg;
+	}
+
+
+
+	public String getLabelDate() {
+		return labelDate;
+	}
+
+	public void setLabelDate(String labelDate) {
+		this.labelDate = labelDate;
+	}
+
+	public String getSaturdayDelivery() {
+		return saturdayDelivery;
+	}
+
+	public void setSaturdayDelivery(String saturdayDelivery) {
+		this.saturdayDelivery = saturdayDelivery;
+	}
+
+	public String getDryIceWt() {
+		return dryIceWt;
+	}
+
+	public void setDryIceWt(String dryIceWt) {
+		this.dryIceWt = dryIceWt;
+	}
+
+	public String getLabelImg() {
+		return labelImg;
+	}
+
+	public void setLabelImg(String labelImg) {
+		this.labelImg = labelImg;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Options [labelDate=" + labelDate + ", saturdayDelivery=" + saturdayDelivery + ", dryIceWt=" + dryIceWt
+				+ ", labelImg=" + labelImg + "]";
+	}
+
+	
+}

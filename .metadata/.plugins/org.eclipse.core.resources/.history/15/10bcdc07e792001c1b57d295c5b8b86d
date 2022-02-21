@@ -1,0 +1,33 @@
+package com.example.dto;
+
+import java.io.Serializable;
+
+public class Sku implements Serializable{
+	
+	private Integer sku;
+	
+	private Integer qty;
+
+	public Integer getSku() {
+	return sku;
+	}
+
+	public void setSku(Integer sku) {
+	this.sku = sku;
+	}
+
+	public Integer getQty() {
+	return qty;
+	}
+
+	public void setQty(Integer qty) {
+	this.qty = qty;
+	}
+
+	@Override
+	public String toString() {
+		return "Sku [sku=" + sku + ", qty=" + qty + "]";
+	}
+	
+	
+}

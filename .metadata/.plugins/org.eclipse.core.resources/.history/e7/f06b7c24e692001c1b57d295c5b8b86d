@@ -1,0 +1,23 @@
+package com.example.dto;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class CustomsFldlst implements Serializable {
+	private List<CustomsField> customsField = null;
+
+	public List<CustomsField> getCustomsField() {
+		return customsField;
+	}
+
+	public void setCustomsField(List<CustomsField> customsField) {
+		this.customsField = customsField;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomsFldlst [customsField=" + customsField + "]";
+	}
+	
+	
+}

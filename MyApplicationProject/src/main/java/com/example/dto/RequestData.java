@@ -1,38 +1,33 @@
 package com.example.dto;
 
+import java.io.Serializable;
+
 public class RequestData {
 
-	private int id;
-	private String name;
+	private EasyPostOneData easyPostOneData;
 
+	
 	public RequestData() {
+		
 	}
 
-	public RequestData(int id, String name) {
+	public RequestData(EasyPostOneData easyPostOneData) {
 		super();
-		this.id = id;
-		this.name = name;
+		this.easyPostOneData = easyPostOneData;
 	}
 
-	public int getId() {
-		return id;
+	public EasyPostOneData getEasyPostOneData() {
+		return easyPostOneData;
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
+	public void setEasyPostOneData(EasyPostOneData easyPostOneData) {
+		this.easyPostOneData = easyPostOneData;
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	@Override
 	public String toString() {
-		return "RequestData [id=" + id + ", name=" + name + "]";
+		return "RequestData [easyPostOneData=" + easyPostOneData + "]";
 	}
 
 }

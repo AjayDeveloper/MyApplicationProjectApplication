@@ -1,0 +1,85 @@
+package com.example.dto;
+
+import java.io.Serializable;
+
+public class CustomsItem  implements Serializable{
+
+	private String description;
+
+	private Integer printedCommodityIdentifier;
+
+	private Integer quantity;
+
+	private Integer weight;
+
+	private Integer value;
+
+	private Integer hsTariffNumber;
+
+	private String originCountry;
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public Integer getPrintedCommodityIdentifier() {
+		return printedCommodityIdentifier;
+	}
+
+	public void setPrintedCommodityIdentifier(Integer printedCommodityIdentifier) {
+		this.printedCommodityIdentifier = printedCommodityIdentifier;
+	}
+
+	public Integer getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
+
+	public Integer getWeight() {
+		return weight;
+	}
+
+	public void setWeight(Integer weight) {
+		this.weight = weight;
+	}
+
+	public Integer getValue() {
+		return value;
+	}
+
+	public void setValue(Integer value) {
+		this.value = value;
+	}
+
+	public Integer getHsTariffNumber() {
+		return hsTariffNumber;
+	}
+
+	public void setHsTariffNumber(Integer hsTariffNumber) {
+		this.hsTariffNumber = hsTariffNumber;
+	}
+
+	public String getOriginCountry() {
+		return originCountry;
+	}
+
+	public void setOriginCountry(String originCountry) {
+		this.originCountry = originCountry;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomsItem [description=" + description + ", printedCommodityIdentifier=" + printedCommodityIdentifier
+				+ ", quantity=" + quantity + ", weight=" + weight + ", value=" + value + ", hsTariffNumber="
+				+ hsTariffNumber + ", originCountry=" + originCountry + "]";
+	}
+
+	
+}

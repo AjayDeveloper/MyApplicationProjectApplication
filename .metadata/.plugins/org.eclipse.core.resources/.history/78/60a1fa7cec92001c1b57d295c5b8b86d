@@ -1,0 +1,14 @@
+package com.example.dto;
+
+import java.io.Serializable;
+
+public class RequestData {
+
+	private int id;
+	private String name;
+
+	public RequestData() {
+		super();
+	}
+
+}

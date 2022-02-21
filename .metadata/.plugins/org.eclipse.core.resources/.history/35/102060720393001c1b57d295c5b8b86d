@@ -1,0 +1,44 @@
+package com.example.dto;
+
+public class CustomsItemsList {
+
+	private CustomsItem customsItemsList;
+	
+	
+
+	public CustomsItemsList() {
+		
+	}
+
+
+
+	public CustomsItemsList(CustomsItem customsItemsList) {
+		super();
+		this.customsItemsList = customsItemsList;
+	}
+
+
+
+	public CustomsItem getCustomsItemsList() {
+		return customsItemsList;
+	}
+
+
+
+	public void setCustomsItemsList(CustomsItem customsItemsList) {
+		this.customsItemsList = customsItemsList;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "CustomsItemsList [customsItemsList=" + customsItemsList + "]";
+	}
+
+
+
+
+	
+	
+}

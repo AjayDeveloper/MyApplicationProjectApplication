@@ -1,0 +1,48 @@
+package com.example.dto;
+
+public class ServiceInfo {
+	
+	
+	private String Carrier;
+	
+	private String LevelOfService;
+
+	public ServiceInfo() {
+		
+	}
+
+	public ServiceInfo(String carrier, String levelOfService) {
+		super();
+		Carrier = carrier;
+		LevelOfService = levelOfService;
+	}
+
+	public String getCarrier() {
+		return Carrier;
+	}
+
+	public void setCarrier(String carrier) {
+		Carrier = carrier;
+	}
+
+	public String getLevelOfService() {
+		return LevelOfService;
+	}
+
+	public void setLevelOfService(String levelOfService) {
+		LevelOfService = levelOfService;
+	}
+
+	@Override
+	public String toString() {
+		return "ServiceInfo [Carrier=" + Carrier + ", LevelOfService=" + LevelOfService + "]";
+	}
+	
+	
+	
+
+	
+	
+
+	
+}

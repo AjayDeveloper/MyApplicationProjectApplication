@@ -1,0 +1,33 @@
+package com.example.dto;
+
+import java.io.Serializable;
+
+public class ServiceInfo implements Serializable{
+	
+	private String carrier;
+	
+	private String levelOfService;
+
+	public String getCarrier() {
+	return carrier;
+	}
+
+	public void setCarrier(String carrier) {
+	this.carrier = carrier;
+	}
+
+	public String getLevelOfService() {
+	return levelOfService;
+	}
+
+	public void setLevelOfService(String levelOfService) {
+	this.levelOfService = levelOfService;
+	}
+
+	@Override
+	public String toString() {
+		return "ServiceInfo [carrier=" + carrier + ", levelOfService=" + levelOfService + "]";
+	}
+	
+	
+}

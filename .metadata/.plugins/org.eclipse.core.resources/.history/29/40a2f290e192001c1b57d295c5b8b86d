@@ -1,0 +1,47 @@
+package com.example.dto;
+
+import java.io.Serializable;
+
+public class Options implements Serializable{
+	
+	private String labelDate;
+	
+	private String saturdayDelivery;
+	
+	private String dryIceWt;
+	
+	private String labelImg;
+
+	public String getLabelDate() {
+	return labelDate;
+	}
+
+	public void setLabelDate(String labelDate) {
+	this.labelDate = labelDate;
+	}
+
+	public String getSaturdayDelivery() {
+	return saturdayDelivery;
+	}
+
+	public void setSaturdayDelivery(String saturdayDelivery) {
+	this.saturdayDelivery = saturdayDelivery;
+	}
+
+	public String getDryIceWt() {
+	return dryIceWt;
+	}
+
+	public void setDryIceWt(String dryIceWt) {
+	this.dryIceWt = dryIceWt;
+	}
+
+	public String getLabelImg() {
+	return labelImg;
+	}
+
+	public void setLabelImg(String labelImg) {
+	this.labelImg = labelImg;
+	}
+
+}

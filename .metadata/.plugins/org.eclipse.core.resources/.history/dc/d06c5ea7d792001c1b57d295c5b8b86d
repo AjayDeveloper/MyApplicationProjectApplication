@@ -1,0 +1,14 @@
+package com.example.dto;
+
+public class EasyPostOneList {
+	
+	private EasyPostOne easyPostOne;
+
+	public EasyPostOne getEasyPostOne() {
+	return easyPostOne;
+	}
+
+	public void setEasyPostOne(EasyPostOne easyPostOne) {
+	this.easyPostOne = easyPostOne;
+	}
+}

@@ -1,0 +1,51 @@
+package com.example.dto;
+
+public class EasyPostOne {
+
+	private Long companyCode;
+
+	private String facilityCode;
+
+	private String waveNumber;
+
+	private String orderNumber;
+
+	private Long packageNumber;
+
+	private Long packageID;
+
+	private Long scheduleNumber;
+	
+	private String packageType;
+
+	private String action;
+
+	private String key_Id;
+
+	private String shipViaCode;
+
+	private String applyShipLabel;
+
+	private ServiceInfo ServiceInfo;
+
+	private To_Address To_Address;
+
+	private GiftMessage giftMessage;
+
+	private Parcel Parcel;
+
+	private CustomsItemsList CustomsItemsList;
+
+	private Options Options;
+
+	private OptionalInfo OptionalInfo;
+
+	public EasyPostOne() {
+	
+	}
+
+
+	
+	
+
+}

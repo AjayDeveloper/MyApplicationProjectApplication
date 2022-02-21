@@ -1,0 +1,50 @@
+package com.example.dto;
+
+public class Options {
+
+	@SerializedName("Label_Date")
+	@Expose
+	private String labelDate;
+	@SerializedName("Saturday_Delivery")
+	@Expose
+	private String saturdayDelivery;
+	@SerializedName("Dry_Ice_Wt")
+	@Expose
+	private String dryIceWt;
+	@SerializedName("Label_Img")
+	@Expose
+	private String labelImg;
+
+	public String getLabelDate() {
+		return labelDate;
+	}
+
+	public void setLabelDate(String labelDate) {
+		this.labelDate = labelDate;
+	}
+
+	public String getSaturdayDelivery() {
+		return saturdayDelivery;
+	}
+
+	public void setSaturdayDelivery(String saturdayDelivery) {
+		this.saturdayDelivery = saturdayDelivery;
+	}
+
+	public String getDryIceWt() {
+		return dryIceWt;
+	}
+
+	public void setDryIceWt(String dryIceWt) {
+		this.dryIceWt = dryIceWt;
+	}
+
+	public String getLabelImg() {
+		return labelImg;
+	}
+
+	public void setLabelImg(String labelImg) {
+		this.labelImg = labelImg;
+	}
+
+}

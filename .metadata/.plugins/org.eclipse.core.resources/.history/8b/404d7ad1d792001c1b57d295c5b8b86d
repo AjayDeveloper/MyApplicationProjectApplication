@@ -1,0 +1,17 @@
+package com.example.dto;
+
+import java.util.List;
+
+public class SkuList {
+
+	private List<Sku> skus = null;
+
+	public List<Sku> getSkus() {
+		return skus;
+	}
+
+	public void setSkus(List<Sku> skus) {
+		this.skus = skus;
+	}
+
+}

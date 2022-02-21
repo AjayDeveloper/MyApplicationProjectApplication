@@ -1,0 +1,23 @@
+package com.example.dto;
+
+import java.io.Serializable;
+
+public class EasyPostOneData  implements Serializable{
+
+	private EasyPostOneList EasyPostOneList;
+
+	public EasyPostOneList getEasyPostOneList() {
+		return EasyPostOneList;
+	}
+
+	public void setEasyPostOneList(EasyPostOneList EasyPostOneList) {
+		this.EasyPostOneList = EasyPostOneList;
+	}
+
+	@Override
+	public String toString() {
+		return "EasyPostOneData [easyPostOneList=" + EasyPostOneList + "]";
+	}
+	
+	
+}

@@ -1,0 +1,242 @@
+package com.example.dto;
+
+public class EasyPostOne {
+
+	private Long companyCode;
+
+	private String facilityCode;
+
+	private String waveNumber;
+
+	private String orderNumber;
+
+	private Long packageNumber;
+
+	private Integer PackageID;
+
+	private Long ScheduleNumber;
+	private String PackageType;
+
+	private String Action;
+
+	private String Key_Id;
+
+	private String ShipViaCode;
+
+	private String ApplyShipLabel;
+
+	private ServiceInfo ServiceInfo;
+
+	private To_Address To_Address;
+
+	private GiftMessage giftMessage;
+
+	private Parcel Parcel;
+
+	private CustomsItemsList CustomsItemsList;
+
+	private Options Options;
+
+	private OptionalInfo OptionalInfo;
+
+	public EasyPostOne() {
+	
+	}
+
+	public EasyPostOne(Long companyCode, String facilityCode, String waveNumber, String orderNumber, Long packageNumber,
+			Integer packageID, Long scheduleNumber, String packageType, String action, String key_Id,
+			String shipViaCode, String applyShipLabel, com.example.dto.ServiceInfo serviceInfo,
+			com.example.dto.To_Address to_Address, GiftMessage giftMessage, com.example.dto.Parcel parcel,
+			com.example.dto.CustomsItemsList customsItemsList, com.example.dto.Options options,
+			com.example.dto.OptionalInfo optionalInfo) {
+		super();
+		this.companyCode = companyCode;
+		this.facilityCode = facilityCode;
+		this.waveNumber = waveNumber;
+		this.orderNumber = orderNumber;
+		this.packageNumber = packageNumber;
+		PackageID = packageID;
+		ScheduleNumber = scheduleNumber;
+		PackageType = packageType;
+		Action = action;
+		Key_Id = key_Id;
+		ShipViaCode = shipViaCode;
+		ApplyShipLabel = applyShipLabel;
+		ServiceInfo = serviceInfo;
+		To_Address = to_Address;
+		this.giftMessage = giftMessage;
+		Parcel = parcel;
+		CustomsItemsList = customsItemsList;
+		Options = options;
+		OptionalInfo = optionalInfo;
+	}
+
+	public Long getCompanyCode() {
+		return companyCode;
+	}
+
+	public void setCompanyCode(Long companyCode) {
+		this.companyCode = companyCode;
+	}
+
+	public String getFacilityCode() {
+		return facilityCode;
+	}
+
+	public void setFacilityCode(String facilityCode) {
+		this.facilityCode = facilityCode;
+	}
+
+	public String getWaveNumber() {
+		return waveNumber;
+	}
+
+	public void setWaveNumber(String waveNumber) {
+		this.waveNumber = waveNumber;
+	}
+
+	public String getOrderNumber() {
+		return orderNumber;
+	}
+
+	public void setOrderNumber(String orderNumber) {
+		this.orderNumber = orderNumber;
+	}
+
+	public Long getPackageNumber() {
+		return packageNumber;
+	}
+
+	public void setPackageNumber(Long packageNumber) {
+		this.packageNumber = packageNumber;
+	}
+
+	public Integer getPackageID() {
+		return PackageID;
+	}
+
+	public void setPackageID(Integer packageID) {
+		PackageID = packageID;
+	}
+
+	public Long getScheduleNumber() {
+		return ScheduleNumber;
+	}
+
+	public void setScheduleNumber(Long scheduleNumber) {
+		ScheduleNumber = scheduleNumber;
+	}
+
+	public String getPackageType() {
+		return PackageType;
+	}
+
+	public void setPackageType(String packageType) {
+		PackageType = packageType;
+	}
+
+	public String getAction() {
+		return Action;
+	}
+
+	public void setAction(String action) {
+		Action = action;
+	}
+
+	public String getKey_Id() {
+		return Key_Id;
+	}
+
+	public void setKey_Id(String key_Id) {
+		Key_Id = key_Id;
+	}
+
+	public String getShipViaCode() {
+		return ShipViaCode;
+	}
+
+	public void setShipViaCode(String shipViaCode) {
+		ShipViaCode = shipViaCode;
+	}
+
+	public String getApplyShipLabel() {
+		return ApplyShipLabel;
+	}
+
+	public void setApplyShipLabel(String applyShipLabel) {
+		ApplyShipLabel = applyShipLabel;
+	}
+
+	public ServiceInfo getServiceInfo() {
+		return ServiceInfo;
+	}
+
+	public void setServiceInfo(ServiceInfo serviceInfo) {
+		ServiceInfo = serviceInfo;
+	}
+
+	public To_Address getTo_Address() {
+		return To_Address;
+	}
+
+	public void setTo_Address(To_Address to_Address) {
+		To_Address = to_Address;
+	}
+
+	public GiftMessage getGiftMessage() {
+		return giftMessage;
+	}
+
+	public void setGiftMessage(GiftMessage giftMessage) {
+		this.giftMessage = giftMessage;
+	}
+
+	public Parcel getParcel() {
+		return Parcel;
+	}
+
+	public void setParcel(Parcel parcel) {
+		Parcel = parcel;
+	}
+
+	public CustomsItemsList getCustomsItemsList() {
+		return CustomsItemsList;
+	}
+
+	public void setCustomsItemsList(CustomsItemsList customsItemsList) {
+		CustomsItemsList = customsItemsList;
+	}
+
+	public Options getOptions() {
+		return Options;
+	}
+
+	public void setOptions(Options options) {
+		Options = options;
+	}
+
+	public OptionalInfo getOptionalInfo() {
+		return OptionalInfo;
+	}
+
+	public void setOptionalInfo(OptionalInfo optionalInfo) {
+		OptionalInfo = optionalInfo;
+	}
+
+	@Override
+	public String toString() {
+		return "EasyPostOne [companyCode=" + companyCode + ", facilityCode=" + facilityCode + ", waveNumber="
+				+ waveNumber + ", orderNumber=" + orderNumber + ", packageNumber=" + packageNumber + ", PackageID="
+				+ PackageID + ", ScheduleNumber=" + ScheduleNumber + ", PackageType=" + PackageType + ", Action="
+				+ Action + ", Key_Id=" + Key_Id + ", ShipViaCode=" + ShipViaCode + ", ApplyShipLabel=" + ApplyShipLabel
+				+ ", ServiceInfo=" + ServiceInfo + ", To_Address=" + To_Address + ", giftMessage=" + giftMessage
+				+ ", Parcel=" + Parcel + ", CustomsItemsList=" + CustomsItemsList + ", Options=" + Options
+				+ ", OptionalInfo=" + OptionalInfo + "]";
+	}
+
+	
+	
+	
+	
+
+}

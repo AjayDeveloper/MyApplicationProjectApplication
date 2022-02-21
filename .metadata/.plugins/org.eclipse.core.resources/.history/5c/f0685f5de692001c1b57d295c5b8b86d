@@ -1,0 +1,31 @@
+package com.example.dto;
+
+import java.io.Serializable;
+
+public class CustomsItemsList implements Serializable {
+	private CustomsItem customsItem;
+	
+	
+	
+
+	public CustomsItemsList() {
+	
+	}
+	
+	
+
+	public CustomsItem getCustomsItem() {
+	return customsItem;
+	}
+
+	public void setCustomsItem(CustomsItem customsItem) {
+	this.customsItem = customsItem;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomsItemsList [customsItem=" + customsItem + "]";
+	}
+	
+	
+}

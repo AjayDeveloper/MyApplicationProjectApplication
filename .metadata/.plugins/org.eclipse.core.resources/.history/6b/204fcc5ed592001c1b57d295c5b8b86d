@@ -1,0 +1,17 @@
+package com.example.dto;
+
+public class CustomsField {
+	
+	
+	private String customsFld;
+
+	public String getCustomsFld() {
+	return customsFld;
+	}
+
+	public void setCustomsFld(String customsFld) {
+	this.customsFld = customsFld;
+	}
+
+
+}

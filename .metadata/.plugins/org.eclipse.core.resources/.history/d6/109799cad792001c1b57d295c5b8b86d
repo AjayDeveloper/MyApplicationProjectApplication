@@ -1,0 +1,24 @@
+package com.example.dto;
+
+public class ServiceInfo {
+	
+	private String carrier;
+	
+	private String levelOfService;
+
+	public String getCarrier() {
+	return carrier;
+	}
+
+	public void setCarrier(String carrier) {
+	this.carrier = carrier;
+	}
+
+	public String getLevelOfService() {
+	return levelOfService;
+	}
+
+	public void setLevelOfService(String levelOfService) {
+	this.levelOfService = levelOfService;
+	}
+}
