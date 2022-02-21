@@ -4,39 +4,34 @@ import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.example.dto.EasyPostOneData;
+
 @Document(value = "requestdata")
 public class RequestDataDocument {
-	@Indexed(direction=IndexDirection.ASCENDING)
-	private int id;
-	private String name;
+
+	private EasyPostOneData easyPostOneData;
 
 	public RequestDataDocument() {
+
 	}
 
-	public RequestDataDocument(int id, String name) {
-		this.id = id;
-		this.name = name;
+	public RequestDataDocument(EasyPostOneData easyPostOneData) {
+		super();
+		this.easyPostOneData = easyPostOneData;
 	}
 
-	public int getId() {
-		return id;
+	public EasyPostOneData getEasyPostOneData() {
+		return easyPostOneData;
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
+	public void setEasyPostOneData(EasyPostOneData easyPostOneData) {
+		this.easyPostOneData = easyPostOneData;
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	@Override
 	public String toString() {
-		return "RequestData [id=" + id + ", name=" + name + "]";
+		return "RequestData [easyPostOneData=" + easyPostOneData + "]";
 	}
 
 }

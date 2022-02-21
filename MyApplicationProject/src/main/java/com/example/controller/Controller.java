@@ -16,28 +16,25 @@ import com.example.service.RequestDataService;
 @RestController
 @RequestMapping("/client")
 public class Controller {
-	
+
 	@Autowired
 	RequestDataService service;
-	
-	/*
-	 * @PostMapping(value = "/create", consumes = {
-	 * MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE }, produces
-	 * = { MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE })
-	 * public RequestData createData(@RequestBody RequestData requestData ) {
-	 * System.out.println("CreateData Method call"); return
-	 * service.insertRequestData(requestData);
-	 * 
-	 * }
-	 */
-	
-	
+
+	@PostMapping(value = "/create", consumes = { MediaType.APPLICATION_JSON_VALUE,
+			MediaType.APPLICATION_XML_VALUE }, produces = { MediaType.APPLICATION_JSON_VALUE,
+					MediaType.APPLICATION_XML_VALUE })
+	public RequestData createData(@RequestBody RequestData requestData) {
+		System.out.println("CreateData Method call");
+		return service.insertRequestData(requestData);
+
+	}
+
 	@PostMapping(value = "/createlog", consumes = { MediaType.APPLICATION_JSON_VALUE,
 			MediaType.APPLICATION_XML_VALUE }, produces = { MediaType.APPLICATION_JSON_VALUE,
 					MediaType.APPLICATION_XML_VALUE })
-	public RequestData createDatalog(@RequestBody RequestData easyPostOneData ) {
-		System.out.println("CreateDatalog Method call" +easyPostOneData);
-		
+	public RequestData createDatalog(@RequestBody RequestData easyPostOneData) {
+		System.out.println("CreateDatalog Method call" + easyPostOneData);
+
 		return easyPostOneData;
 
 	}

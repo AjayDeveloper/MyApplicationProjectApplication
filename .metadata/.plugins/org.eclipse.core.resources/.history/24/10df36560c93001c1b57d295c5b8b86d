@@ -1,0 +1,11 @@
+package com.example.entity;
+
+import org.springframework.data.mongodb.core.index.IndexDirection;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(value = "requestdata")
+public class RequestDataDocument {
+	
+
+}
