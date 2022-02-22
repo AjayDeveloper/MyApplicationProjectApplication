@@ -9,7 +9,7 @@ public class EasyPostOne {
 	private String waveNumber;
 
 	private String orderNumber;
-
+    
 	private Long packageNumber;
 
 	private Long packageID;
